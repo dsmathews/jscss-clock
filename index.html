@@ -82,12 +82,11 @@ const secondHand = document.querySelector('.second-hand');
 
       const hours = now.getHours();
       const hoursDegrees = ((hours / 60) * 360) + 90;
-      minuteHand.style.transform = `rotate (${hoursDegrees}deg)`;
+      hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 
       const minutes = now.getMinutes();
       const minutesDegrees = ((minutes / 60) * 360) + 90;
-      minuteHand.style.transform = `rotate (${minutesDegrees}deg)`; 
-
+      minuteHand.style.transform = `rotate(${minutesDegrees}deg)`; 
 
       const seconds = now.getSeconds();
       const secondsDegrees = ((seconds / 60) * 360) + 90;
